@@ -30,7 +30,6 @@ pub struct BotGateway {
 ///
 /// [Discord docs](https://discord.com/developers/docs/topics/gateway#activity-object-activity-structure).
 #[derive(Clone, Debug, Deserialize, Serialize)]
-#[non_exhaustive]
 pub struct Activity {
     /// The ID of the application for the activity.
     pub application_id: Option<ApplicationId>,
@@ -271,7 +270,6 @@ impl Activity {
 
 /// [Discord docs](https://discord.com/developers/docs/topics/gateway#activity-object-activity-buttons).
 #[derive(Clone, Debug, Serialize, Deserialize)]
-#[non_exhaustive]
 pub struct ActivityButton {
     /// The text shown on the button.
     pub label: String,
